@@ -40,4 +40,9 @@ public class PostController {
         post = postService.addPost(post);
         return post;
     }
+
+    @GetMapping
+    public List<Post> getPost() {
+        return postService.getPost();
+    }
 }
